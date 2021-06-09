@@ -6,6 +6,8 @@ import MailLogin from '../screens/loginMail';
 import Search from '../screens/Search';
 import FilmDetails from '../Components/FilmDetails';
 import Favorites from '../Components/Favorites';
+import News from '../Components/News';
+import { MaterialIcons } from 'react-native-vector-icons/MaterialIcons';
 
 //import Ionicons from '@expo/vector-icons/Ionicons';
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -30,6 +32,8 @@ function BottomNavigator() {
               : 'md-search-circle-outline';
           } else if (route.name === 'Favorites') {
             iconName = focused ? 'md-heart-circle' : 'md-heart-circle-outline';
+          }else if (route.name === 'News'){
+            iconName = focused ? 'md-newspaper' : 'md-newspaper-outline';
           }
 
           // You can return any component that you like here!
@@ -43,6 +47,7 @@ function BottomNavigator() {
     >
       <MoviesTabNavigator.Screen name="SearchScreen" component={SearchScreen} options={{ title: 'Rechercher' }} />
       <MoviesTabNavigator.Screen name="Favorites" component={FavoritesScreen} options={{ title: 'Favoris', tabBarBadge: numberFavorite}} />
+      <MoviesTabNavigator.Screen name='News' component={News} options={{title: 'News', }} />
     </MoviesTabNavigator.Navigator>
   );
 }

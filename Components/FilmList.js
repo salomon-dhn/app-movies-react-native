@@ -37,7 +37,7 @@ function FilmList(props) {
 }
 const styles =StyleSheet.create({
     flat:{
-        marginTop:10
+        marginTop:5
     }
 })
 // On connecte le store Redux, ainsi que les films favoris du state de notre application, à notre component Search

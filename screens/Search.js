@@ -3,7 +3,7 @@ import { View, StyleSheet, TextInput, Text, FlatList, ActivityIndicator } from '
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import FilmList from '../Components/FilmList';
-import { getFilmsByText } from '../API/TMDB';
+import { getFilmsByText } from  '../API/TMDB';
 import { useState } from 'react';
 //import { connect } from 'react-redux';
 import { useEffect } from 'react';
@@ -19,17 +19,11 @@ function Search(props) {
     function _loadFilms() {
         if (searchedText.length > 0) { // Seulement si le texte recherché n'est pas vide
             setIsLoading(true);
-            console.log('1- Page: ' + page + 'Nbpages : ' + totalPages);
             getFilmsByText(searchedText, page + 1).then(data => {
-                console.log('chargement' + data);
-                console.log('2- Page: ' + page + 'Nbpages : ' + totalPages);
                 page = data.page;
                 totalPages = data.total_pages;
                 setFilms([...films, ...data.results]);
                 setIsLoading(false);
-                console.log('film chargé page : ' + page + 'veritable page: ' + data.page + 'To: ' + data.total_pages);
-                console.log('3- Page: ' + page + 'Nbpages : ' + totalPages);
-                //console.log(data.results);
             })
         }
     }
@@ -94,7 +88,6 @@ function Search(props) {
                 favoriteList={false}
             />
             {_displayLoading()}
-            {console.log(props.favoritesFilm)}
         </SafeAreaView>
     );
 }
