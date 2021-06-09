@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ImagePicker from 'react-native-image-picker';
 import { StyleSheet, Image, TouchableOpacity } from 'react-native';
-
+import { connect } from 'react-redux';
 function  Avatar (){
 
- const state = {
-      avatar: require('../Images/ic_tag_faces.png')
-    }
+ const [avatar, setAvatar] = useState(require('../Images/ic_tag_faces.png'));
+    
   
 
   const _avatarClicked =()=> {
     // Ici nous appellerons la librairie react-native-image-picker pour récupérer un avatar
+    ImagePicker.showImagePicker({}, (response) => {
+      if (response.didCancel) {
+        console.log('L\'utilisateur a annulé');
+      }
+      else if (response.error) {
+        console.log('Erreur : ', response.error);
+      }
+      else {
+        console.log('Photo : ', response.uri );
+        let requireSource = { uri: response.uri }
+        setAvatar( requireSource );
+      }
+    })
   }
 
     return(
@@ -40,4 +52,11 @@ const styles = StyleSheet.create({
   }
 });
 
-export default Avatar;
+// On mappe l'avatar aux props de notre component
+const mapStateToProps = state => {
+  return {
+    avatar: state.setAvatar.avatar
+  }
+}
+
+export default connect(mapStateToProps)(Avatar);
