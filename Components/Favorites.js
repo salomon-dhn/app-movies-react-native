@@ -4,7 +4,6 @@ import { StyleSheet, Text, View  } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context'; 
 import FilmList from './FilmList';
 import Avatar from './Avatar';
-import ImagePicker from 'react-native-image-picker'
 
 function Favorites (props) {
 
