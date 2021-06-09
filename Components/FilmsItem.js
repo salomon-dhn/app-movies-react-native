@@ -39,7 +39,7 @@ function FilmsItem(props){
   }
 
     return(
-       <FadeIn>
+       //<FadeIn>
         <TouchableOpacity style={styles.mainContainer} onPress={()=> displayDetailForFilm(film.id)}>
             <Image source={{uri: getImageFromApi(film.poster_path)}} style={styles.imageContainer}/>
             <View style={styles.box}>
@@ -59,7 +59,7 @@ function FilmsItem(props){
                 </View>
             </View>
         </TouchableOpacity>
-       </FadeIn>
+       //</FadeIn>
     );
 }
 

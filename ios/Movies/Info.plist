@@ -48,8 +48,6 @@
     </array>
     <key>UIViewControllerBasedStatusBarAppearance</key>
     <false/>
-    <key>UIUserInterfaceStyle</key>
-    <string>Light</string>
     <key>CFBundleURLTypes</key>
     <array>
       <dict>
@@ -61,8 +59,6 @@
     </array>
     <key>UIRequiresFullScreen</key>
     <true/>
-    <key>CFBundleDisplayName</key>
-    <string>Movies</string>
     <key>NSPhotoLibraryUsageDescription</key>
     <string>$(PRODUCT_NAME) voudrait accéder à votre galerie photo</string>
     <key>NSCameraUsageDescription</key>
@@ -71,5 +67,9 @@
     <string>$(PRODUCT_NAME) voudrait enregistrer des photos dans votre galerie photo</string>
     <key>NSMicrophoneUsageDescription</key>
     <string>$(PRODUCT_NAME) voudrait accéder à votre micro (pour les vidéos)</string>
+    <key>UIUserInterfaceStyle</key>
+    <string>Light</string>
+    <key>CFBundleDisplayName</key>
+    <string>Movies</string>
   </dict>
 </plist>
