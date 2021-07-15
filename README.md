@@ -198,7 +198,7 @@ Project Link: [https://github.com/salomon-dhn/app-movies-react-native](https://g
 [issues-shield]: https://img.shields.io/github/issues/salomon-dhn/app-movies-react-native.svg?style=for-the-badge
 [issues-url]: https://github.com/salomon-dhn/app-movies-react-native/issues
 [license-shield]: https://img.shields.io/github/license/salomon-dhn/app-movies-react-native.svg?style=for-the-badge
-[license-url]: https://github.com/salomon-dhn/app-movies-react-native/tree/master/LICENSE.md
+[license-url]: https://github.com/salomon-dhn/app-movies-react-native/tree/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://github.com/salomon-dhn
 [product-screenshot]: https://github.com/salomon-dhn/web-page/blob/main/assets/img/app.gif
