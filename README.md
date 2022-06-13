@@ -21,12 +21,14 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/README.md
 -->
+
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+
 
 
 
@@ -85,7 +87,8 @@ https://raw.githubusercontent.com/othneildrew/Best-README-Template/master/README
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-Awesome application built with React Native and API Movies
+Awesome application built with React Native and API Movies.<br />
+![visitors](https://visitor-badge.glitch.me/badge?page_id=salomon-dhn.app-movies-react-native)
 <br />
 <p align="center">
 <a align="center" href="https://github.com/salomon-dhn/app-movies-react-native">
